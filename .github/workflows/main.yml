@@ -19,9 +19,6 @@ jobs:
         with:
           node: ${{ matrix.node }}
 
-      - name: Run unit tests
-        run: npm test
-
   build-app:
     name: Build application
     needs:
