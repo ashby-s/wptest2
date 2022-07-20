@@ -52,7 +52,7 @@ jobs:
       - name: Save build directory
         uses: actions/upload-artifact@v3
         with:
-          name: 'build'
+          name: 'build-'
           path: "dist"
           if-no-files-found: error
           retention-days: 2
