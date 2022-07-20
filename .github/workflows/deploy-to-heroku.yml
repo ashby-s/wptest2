@@ -70,7 +70,7 @@ jobs:
         uses: './.github/actions/test-app'
         with:
           app: ${{ inputs.app }}
-          base-url: ${{ needs.deploy.outputs.deploy-url }}
+          base-url: https://${{ secrets.HEROKU_APP_NAME }}.herokuapp.com
           browser: ${{ matrix.browser }}
           cypress-project-id: ${{ secrets.CYPRESS_PROJECT_ID }}
           cypress-record-key: ${{ secrets.CYPRESS_RECORD_KEY }}
