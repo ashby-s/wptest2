@@ -19,8 +19,14 @@ export const PageWrap: FC<PageProps> = ({ routes, children }) => {
 
   return (
     <Page
-      footerNavigation={navigation}
-      navigation={navigation}
+      footerNavigation={[
+      {href: "/",text: "Home"},
+      {href: "/case-list",text:"review applications"}
+      ]}
+      navigation={[
+      {href: "/",text:"home"},
+      {href: "/case-list", text:"Review applications"}
+      ]}
       title="Work Placement Testing Page"
     >
       {children}
